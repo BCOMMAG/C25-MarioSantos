@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Paleta 60-30-10 Modo Claro */
+  --bg-primary: #F5F5F3;        /* 60% Fundo Claro - Branco Premium */
+  --bg-card: #FFFFFF;           /* Superfícies de Cartão */
+  --bg-secondary: #EBEBE8;      /* Superfícies de Apoio e Separação */
+  --text-main: #061426;         /* 30% Azul-Marinho Profundo (Títulos & Destaques) */
+  --text-muted: #475569;        /* Textos Secundários / Apoio */
+  
+  /* Cores da Identidade Visual Mario Santos */
+  --brand-navy-dark: #061426;   /* Azul-Marinho Profundo */
+  --brand-navy-secondary: #17283D; /* Azul Secundário */
+  --brand-charcoal: #0B1018;    /* Azul-Carvão */
+  --brand-gold: #D99A3A;        /* 10% Dourado Institucional */
+  --brand-gold-hover: #C5882B;  /* Dourado Hover */
+  --brand-slate-gray: #AAB3BF;  /* Cinza Azulado */
+  --brand-white-premium: #F5F5F3;
+
+  /* Mapeamento de Tokens do Sistema */
+  --accent: #D99A3A;            /* 10% Dourado Institucional */
+  --accent-hover: #C5882B;
+  --accent-light: #FDF6EC;
+  --accent-dark: #061426;
+  --border-subtle: rgba(6, 20, 38, 0.12);
+}
+
+html.dark {
+  /* Paleta 60-30-10 Modo Escuro */
+  --bg-primary: #061426;        /* 60% Fundo Escuro - Azul-Marinho Profundo */
+  --bg-card: #0B1018;           /* Azul-Carvão / Cartão */
+  --bg-secondary: #17283D;      /* Azul Secundário - Apoio e Profundidade */
+  --text-main: #F5F5F3;         /* 30% Títulos em Branco Premium */
+  --text-muted: #AAB3BF;        /* Textos Secundários em Cinza Azulado */
+  
+  --brand-navy-dark: #061426;
+  --brand-navy-secondary: #17283D;
+  --brand-charcoal: #0B1018;
+  --brand-gold: #D99A3A;
+  --brand-gold-hover: #E5A84B;
+  --brand-slate-gray: #AAB3BF;
+  --brand-white-premium: #F5F5F3;
+
+  --accent: #D99A3A;            /* Dourado Institucional */
+  --accent-hover: #E5A84B;
+  --accent-light: #17283D;
+  --accent-dark: #061426;
+  --border-subtle: rgba(217, 154, 58, 0.16);
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body), 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografia de Títulos e Cabeçalhos: Manrope */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading), 'Manrope', sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Tipografia de Leitura e Corpo: Inter */
+.font-body {
+  font-family: var(--font-body), 'Inter', sans-serif;
+}
+
+/* Bordas sutis editoriais */
+.editorial-border {
+  border-color: var(--border-subtle);
+}
+
+.editorial-border-b {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.editorial-border-t {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.editorial-border-l {
+  border-left: 1px solid var(--border-subtle);
+}
+
+.editorial-border-r {
+  border-right: 1px solid var(--border-subtle);
+}
+
+/* Marcador geométrico estilo editorial */
+.bullet-indicator {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 9999px;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+/* Botão Pill */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-family: var(--font-body), 'Inter', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: 0.01em;
+}
+
+/* Efeito Hover Lift Suave */
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Links Editoriais */
+.editorial-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.editorial-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.editorial-link:hover::after {
+  width: 100%;
+}
+
+/* Animação Marquee Contínua para Avaliações */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Keyframes de Fade In Down / Up */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Ajustes de scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #AAB3BF;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #17283D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D99A3A;
+}
