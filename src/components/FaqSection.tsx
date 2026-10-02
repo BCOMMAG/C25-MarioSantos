@@ -228,15 +228,17 @@ export function FaqSection() {
           <p className="font-body text-xs sm:text-sm text-[var(--text-muted)] max-w-md mx-auto mb-5 leading-relaxed">
             Cada caso trabalhista ou previdenciário possui especificidades contratuais, prazos e cálculos próprios. Converse com um advogado para análise personalizada.
           </p>
-          <a
-            href={OFFICE_INFO.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-pill bg-[#25D366] hover:bg-[#20ba59] text-white border-none gap-2 shadow-[0_4px_20px_rgba(37,211,102,0.35)] text-xs sm:text-sm font-bold inline-flex items-center cursor-pointer"
-          >
-            <WhatsAppIcon className="w-4 h-4 text-white" />
-            <span>Falar com um advogado no WhatsApp</span>
-          </a>
+          <div className="pt-1">
+            <a
+              href={OFFICE_INFO.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center btn-pill bg-[#25D366] hover:bg-[#20ba59] text-white py-3.5 px-6 sm:px-8 gap-2 shadow-[0_4px_20px_rgba(37,211,102,0.35)] text-sm sm:text-base cursor-pointer hover-lift transition-all font-bold"
+            >
+              <WhatsAppIcon className="w-4 h-4 text-white" />
+              <span>Falar com um advogado no WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
