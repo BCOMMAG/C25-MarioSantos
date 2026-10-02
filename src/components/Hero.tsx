@@ -106,10 +106,10 @@ export function Hero() {
 
       <div
         ref={contentRef}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-1 flex flex-col justify-between will-change-transform"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-1 flex flex-col justify-center lg:justify-between will-change-transform py-4 sm:py-6 lg:py-0"
       >
-        {/* Topo do Hero: Badge + Título Principal */}
-        <div className="pt-1 sm:pt-2 max-w-3xl animate-fade-in-down">
+        {/* Topo do Hero: Badge + Título Principal (No mobile mais no meio da página) */}
+        <div className="pt-2 sm:pt-4 lg:pt-2 max-w-3xl animate-fade-in-down mb-6 sm:mb-8 lg:mb-0">
           {/* Badge de Autoridade Dourado Institucional */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#D99A3A]/40 bg-[#061426]/80 backdrop-blur-md text-xs sm:text-sm font-heading tracking-wide text-[#F5F5F3] mb-3 sm:mb-4 shadow-sm">
             <ShieldCheck className="w-4 h-4 text-[#D99A3A]" />
@@ -117,7 +117,7 @@ export function Hero() {
           </div>
 
           {/* Headline Principal */}
-          <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] xl:text-[3.25rem] leading-[1.16] sm:leading-[1.14] tracking-tight text-[#F5F5F3] font-bold drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)]">
+          <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] xl:text-[3.25rem] leading-[1.18] sm:leading-[1.14] tracking-tight text-[#F5F5F3] font-bold drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)]">
             Defesa ágil,{" "}
             <span className="text-[#D99A3A] relative font-extrabold">
               estratégica e humanizada
@@ -127,7 +127,7 @@ export function Hero() {
         </div>
 
         {/* Base do Hero: Subtítulo Conciso + Botões de Conversão + Destaques de Rodapé */}
-        <div className="pb-1 sm:pb-2 max-w-3xl mt-auto animate-fade-in-up">
+        <div className="pb-1 sm:pb-2 max-w-3xl lg:mt-auto animate-fade-in-up">
           <p className="font-body text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 max-w-2xl leading-relaxed mb-4 sm:mb-5 font-normal drop-shadow-sm">
             Rigor técnico, precisão em cálculos rescisórios e benefícios do INSS com atendimento acolhedor na sede física em Curitiba/PR e assessoria online para todo o Brasil.
           </p>
