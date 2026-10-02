@@ -102,7 +102,6 @@ export function Hero() {
         {/* Gradientes e Overlays mesclando Azul-Marinho Profundo #061426, Azul Secundário #17283D e Dourado #D99A3A */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#061426]/95 via-[#061426]/85 to-[#17283D]/45 lg:from-[#061426]/92 lg:via-[#061426]/65 lg:via-55% lg:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#061426]/95 via-transparent to-[#0B1018]/60 lg:from-[#061426]/65 lg:via-transparent lg:to-transparent" />
-        <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#D99A3A]/15 rounded-full blur-3xl lg:hidden" />
       </div>
 
       <div
@@ -120,7 +119,7 @@ export function Hero() {
           {/* Headline Principal */}
           <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] xl:text-[3.25rem] leading-[1.16] sm:leading-[1.14] tracking-tight text-[#F5F5F3] font-bold drop-shadow-[0_2px_14px_rgba(0,0,0,0.9)]">
             Defesa ágil,{" "}
-            <span className="text-[#D99A3A] relative font-extrabold underline decoration-[#D99A3A]/40 underline-offset-4">
+            <span className="text-[#D99A3A] relative font-extrabold">
               estratégica e humanizada
             </span>{" "}
             dos seus direitos trabalhistas e previdenciários.
