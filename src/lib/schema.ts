@@ -14,7 +14,7 @@ export function getLegalServiceSchema() {
     url: siteUrl,
     telephone: `+${OFFICE_INFO.whatsapp}`,
     priceRange: "$$",
-    image: `${siteUrl}/og-image_optimized_300.jpeg`,
+    image: `${siteUrl}/og-image_optimized_300.jpg`,
     logo: `${siteUrl}/logo_sem_fundo_usarnomodoclaro.png`,
     address: {
       "@type": "PostalAddress",

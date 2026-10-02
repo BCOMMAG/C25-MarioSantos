@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Advocacia Mario Santos",
     images: [
       {
-        url: "/og-image_optimized_300.jpeg",
+        url: "/og-image_optimized_300.jpg",
         width: 1200,
         height: 630,
         alt: "Advocacia Mario Santos - Direito Trabalhista e Previdenciário",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Advocacia Mario Santos | Direito Trabalhista e Previdenciário",
     description:
       "Defesa ágil, estratégica e humanizada dos seus direitos trabalhistas e previdenciários. Sede no Centro de Curitiba/PR e atendimento online.",
-    images: ["/og-image_optimized_300.jpeg"],
+    images: ["/og-image_optimized_300.jpg"],
   },
   robots: {
     index: true,

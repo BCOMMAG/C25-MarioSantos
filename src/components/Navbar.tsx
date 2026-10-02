@@ -89,14 +89,14 @@ export function Navbar() {
   return (
     <>
       {/* 1. LOGO MOBILE FIXA SEPARADA - DESCONECTADA DO MENU E ELEVADA (CLIQUE RETORNA AO TOPO DA PÁGINA INICIAL) */}
-      <div className="lg:hidden fixed -top-3.5 sm:-top-4 left-2 sm:left-3 z-[45] pointer-events-none">
+      <div className="lg:hidden fixed top-0 sm:top-0.5 left-2 sm:left-3 z-[45] pointer-events-none">
         <Link
           href="/"
           onClick={handleLogoClick}
           className="flex items-center group focus:outline-none pointer-events-auto"
           aria-label="Ir para a página inicial da Advocacia Mario Santos"
         >
-          <div className="relative h-20 sm:h-22 w-32 sm:w-36 max-w-[36vw] transition-transform duration-300 group-hover:scale-105">
+          <div className="relative h-16 sm:h-18 w-32 sm:w-36 max-w-[36vw] transition-transform duration-300 group-hover:scale-105">
             <Image
               src={currentLogo}
               alt={OFFICE_INFO.name}
@@ -125,14 +125,14 @@ export function Navbar() {
 
             {/* Logo Desktop: Totalmente Desacoplada da altura da barra do menu (+20% no tamanho, clique retorna ao topo) */}
             <div className="hidden lg:flex items-center justify-start relative flex-shrink-0 w-60 xl:w-72 h-10 pointer-events-none">
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-auto">
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 mt-1.5 xl:mt-2 pointer-events-auto">
                 <Link
                   href="/"
                   onClick={handleLogoClick}
                   className="flex items-center group focus:outline-none"
                   aria-label="Ir para a página inicial da Advocacia Mario Santos"
                 >
-                  <div className="relative h-22 xl:h-26 w-60 xl:w-72 transition-transform duration-300 group-hover:scale-105">
+                  <div className="relative h-20 xl:h-24 w-60 xl:w-72 transition-transform duration-300 group-hover:scale-105">
                     <Image
                       src={currentLogo}
                       alt={OFFICE_INFO.name}

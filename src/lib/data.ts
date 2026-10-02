@@ -100,7 +100,9 @@ export const LAWYER_PROFILE: LawyerProfile = {
 export interface PracticeArea {
   id: string;
   title: string;
+  subtitle: string;
   shortDesc: string;
+  description: string;
   iconName: string;
   featured: boolean;
   highlightText: string;
@@ -112,8 +114,11 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   {
     id: "trabalhista",
     title: "Direito do Trabalho (Trabalhador & CLT)",
+    subtitle: "Defesa estratégica contra abusos corporativos, rescisões irregulares e horas extras impagas",
     shortDesc:
       "Defesa contundente de trabalhadores contra abusos corporativos, rescisões irregulares, horas extras não remuneradas e pejotização ilícita.",
+    description:
+      "Atuamos na defesa rigorosa dos direitos do trabalhador da iniciativa privada. Realizamos auditoria minuciosa de cartões-ponto, folhas de pagamento e contratos para identificar fraudes de pejotização, cobrança de horas suplementares, adicionais de insalubridade e periculosidade, rescisões indiretas e reparação por assédio moral.",
     iconName: "Briefcase",
     featured: true,
     highlightText: "Cálculos minuciosos e atuação técnica para assegurar todas as verbas e garantias devidas.",
@@ -132,8 +137,11 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   {
     id: "previdenciario",
     title: "Direito Previdenciário (INSS & Benefícios)",
+    subtitle: "Combate a negativas indevidas e conquista do benefício previdenciário com máxima celeridade",
     shortDesc:
       "Atuação estratégica para reverter indeferimentos do INSS na via judicial e concessão ágil de aposentadorias e benefícios por incapacidade.",
+    description:
+      "Atuamos perante o INSS e a Justiça Federal para reverter indeferimentos arbitrários. Estruturamos a documentação com perícia técnica independente para concessão ou restabelecimento de auxílio-doença, aposentadoria por invalidez, concessão de BPC/LOAS para idosos e PCDs e auxílio-acidente.",
     iconName: "Award",
     featured: true,
     highlightText: "Perícia judicial especializada para restabelecimento de renda e garantia de direitos do segurado.",
@@ -152,8 +160,11 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   {
     id: "calculos-rescisorios",
     title: "Auditoria Rescisória & Acordos",
+    subtitle: "Conferência minuciosa do TRCT para impedir renúncias financeiras e prejuízos no acerto",
     shortDesc:
       "Conferência rigorosa de termos de rescisão contratual (TRCT), salários retidos e cálculo real de haveres para prevenir prejuízos ao empregado.",
+    description:
+      "Examinamos todos os cálculos constantes no Termo de Rescisão de Contrato de Trabalho. Averiguamos se as médias de horas extras, adicionais, férias vencidas ou em dobro, 13º e depósitos de FGTS com 40% foram estritamente cumpridos antes de qualquer assinatura de quitação.",
     iconName: "Scale",
     featured: true,
     highlightText: "Simulação transparente do valor real a receber para impedir renúncias de direitos sob pressão.",
@@ -172,9 +183,12 @@ export const PRACTICE_AREAS: PracticeArea[] = [
   {
     id: "planejamento",
     title: "Planejamento Previdenciário & CNIS",
+    subtitle: "Simulação técnica pós-Reforma para antecipar a aposentadoria e obter o melhor valor de RMI",
     shortDesc:
       "Estudo consultivo detalhado pós-Reforma da Previdência para identificar o melhor momento e a maior Renda Mensal Inicial possível.",
-    iconName: "ShieldCheck",
+    description:
+      "Auditoria preventiva de todo o histórico de contribuições no CNIS. Comparamos as regras de transição vigentes, orientamos a correção de vínculos extemporâneos, averbação de tempo rural e especial para conquistar a maior renda mensal vitalícia.",
+    iconName: "Calculator",
     featured: true,
     highlightText: "Mapeamento seguro das regras de transição para você não perder dinheiro na sua aposentadoria.",
     coverageList: [

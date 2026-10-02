@@ -76,7 +76,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div ref={imageDesktopRef} className="hidden lg:block absolute inset-0 -top-10 -bottom-10 will-change-transform">
           <Image
-            src="/header_desktop.jpeg"
+            src="/header_desktop.jpg"
             alt="Advocacia Mario Santos - Direito Trabalhista e Previdenciário em Curitiba"
             fill
             priority
@@ -89,7 +89,7 @@ export function Hero() {
         {/* Imagem de Fundo Mobile & Tablet Portrait (< lg) */}
         <div ref={imageMobileRef} className="block lg:hidden absolute inset-0 -top-8 -bottom-8 will-change-transform">
           <Image
-            src="/header_mobile.jpeg"
+            src="/header_mobile.jpg"
             alt="Advocacia Mario Santos - Escritório Trabalhista e Previdenciário"
             fill
             priority
